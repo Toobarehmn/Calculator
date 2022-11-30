@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    button{
+        width: 100%;
+        height: 100%;
+        background-color: lightgray;
+       
+        
+    }
+    input{
+        width: 380px;
+        height: 30px;
+       padding-top: 24px;
+    }
+    table{
+        margin-left: 350px;
+        margin-top: 70px; 
+         }
+</style>
+<body >
+    <table border="2px" height="500px" width="400px">
+        <tr style="background-color: lightgray;">
+            
+            <td colspan="5"><input type="text" id="result"></td>
+
+        </tr>
+        <tr >
+            
+            <td><button onclick="cl()">AC</button></td>
+            <td><button onclick="getnumber('%')">%</button></td>
+            <td><button onclick="Del()">DEL</button></td>
+            <td><button onclick="getnumber('*')">* </button></td>
+        </tr>
+        <tr>
+          <td><button onclick="getnumber('7')">7</button></td>
+         <td><button onclick="getnumber('8')">8</button></td>
+         <td><button onclick="getnumber('9')">9</button></td>
+         <td><button onclick="getnumber('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="getnumber('4')">4</button></td>
+            <td><button onclick="getnumber('5')">5</button></td>
+            <td><button onclick="getnumber('6')">6</button></td>
+            <td><button onclick="getnumber('/')">/</button></td>
+            
+        <tr>
+            <td><button onclick="getnumber('1')">1</button></td>
+            <td><button onclick="getnumber('2')">2</button></td>
+            <td><button onclick="getnumber('3')">3</button></td>
+            <td><button onclick="getnumber('+')">+</button></td>
+        </tr>
+        <tr>
+            
+            <td><button onclick="getnumber('0')">0</button></td>
+            <td><button onclick="getnumber('%')">%</button></td>
+            <td><button onclick="getnumber('.')">. </button></td>
+            <td><button onclick="result()">=</button></td>
+        </tr>
+
+        
+    </table>
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>
